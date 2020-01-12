@@ -9,9 +9,9 @@ This application already had the frontend built out and was to show my backend d
 
 <h1>How To</h1>
 <br>
-1. Type in the input fields your notes  then click the SAVE icon.
-2. Create more notes as you wish or click on previous notes to view them.
+1. Type in the input fields your notes  then click the SAVE icon.<br>
+2. Create more notes as you wish or click on previous notes to view them.<br>
 3. Once the user no longer needs the note you can delete the note by clciking the DELETE button.
 
 
-<img src="develop/public/assets/images/demo.JPG" alt="note-taker"  style="width:auto; height:auto;">
+<img src="Develop/public/assets/images/demo.JPG" alt="demo"  style="width:auto; height:auto;">
