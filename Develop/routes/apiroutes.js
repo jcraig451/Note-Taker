@@ -31,7 +31,17 @@ module.exports = function (app) {
         return res.json(noteData)
     });
 
+    // Creating an ID for all the notes 
+    // Below adds a unique ID to all notes in the array
+    // -----------------------------------------------------------------------------
 
+    var addId = function () {
+        noteData.forEach(function (num, newnum) {
+            num.id = newnum + 1;
+            console.log('Added Note: ' + num.id);
+        });
+
+    };
 
     // API DELETE Request 
     // Below code delets notes when selecting trash icon
@@ -47,18 +57,6 @@ module.exports = function (app) {
         rewriteFile();
         return res.json(noteData);
     });
-
-    // Creating an ID for all the notes 
-    // Below adds a unique ID to all notes in the array
-    // -----------------------------------------------------------------------------
-
-    var addId = function () {
-        noteData.forEach(function (num, newnum) {
-            num.id = newnum + 1;
-            console.log('Added Note: ' + num.id);
-        });
-
-    };
 
     // Rewrites notes to the db.json file after deleting
     // -----------------------------------------------------------------------------
